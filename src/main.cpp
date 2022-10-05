@@ -3,7 +3,7 @@
 
 // get the result from the parser will extern the global variable
 // and write to it in every AST node
-double result;
+std::string result;
 
 int main() {
     int yyresult = yyparse();
