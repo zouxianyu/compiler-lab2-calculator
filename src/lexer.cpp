@@ -15,13 +15,13 @@ inline static std::regex getRegex(const std::string &regex) {
 }
 
 static std::pair<int, std::regex> tokenArray[]{
-        {NUMBER, getRegex(R"((\d+(?:\.\d+)?))")},
-        {PLUS,   getRegex(R"((\+))")},
-        {MINUS,  getRegex(R"((-))")},
-        {TIMES,  getRegex(R"((\*))")},
-        {DIVIDE, getRegex(R"((\/))")},
-        {LPAREN, getRegex(R"((\())")},
-        {RPAREN, getRegex(R"((\)))")},
+        {NUMBER,     getRegex(R"((\d+(?:\.\d+)?))")},
+        {PLUS,       getRegex(R"((\+))")},
+        {MINUS,      getRegex(R"((-))")},
+        {TIMES,      getRegex(R"((\*))")},
+        {DIVIDE,     getRegex(R"((\/))")},
+        {LPAREN,     getRegex(R"((\())")},
+        {RPAREN,     getRegex(R"((\)))")},
         {IDENTIFIER, getRegex(R"(([A-Za-z_]\w*))")},
 };
 
