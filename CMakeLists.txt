@@ -11,5 +11,9 @@ bison_target(Parser src/parser.y ${CMAKE_CURRENT_BINARY_DIR}/parser.cpp
 # compiler target
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
 include_directories(src)
-add_executable(calculator src/main.cpp src/lexer.cpp ${BISON_Parser_OUTPUTS})
+add_executable(calculator
+        src/main.cpp
+        src/lexer.cpp
+        src/symbol_table.cpp
+        ${BISON_Parser_OUTPUTS})
 
