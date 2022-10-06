@@ -24,7 +24,7 @@ static std::pair<int, std::regex> tokenArray[]{
         {RPAREN,     getRegex(R"((\)))")},
         {IDENTIFIER, getRegex(R"(([A-Za-z_]\w*))")},
         {ASSIGN,     getRegex(R"((=))")},
-        {SIMICOLON,     getRegex(R"((;))")},
+        {SIMICOLON,  getRegex(R"((;))")},
 };
 
 std::optional<std::pair<int, std::string>> Lexer::getToken() {
